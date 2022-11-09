@@ -15,11 +15,12 @@ public class movingdoor : MonoBehaviour
         door.position = startingpoint.position;
     }
 
-    private void update()
+    private void Update()
     {
        if(isOpen == true)
        {
-        door.position = Vector3.MoveTowards(door.position,EndPoint.position,Time.deltaTime);
+         door.position = Vector3.MoveTowards(door.position,EndPoint.position,Time.deltaTime);
        }
     }   
 }
+
