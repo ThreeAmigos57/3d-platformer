@@ -8,9 +8,9 @@ public class Doorsensor : MonoBehaviour
 
    private void OnTriggerEnter(Collider other)
    {
-		  if(other.tag == "player")
+		  if(other.tag == "Player")
 		  {
-				myDoor.isOpen = true;
+			myDoor.isOpen = true;
 		  }
    }
 }
