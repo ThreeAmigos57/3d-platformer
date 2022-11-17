@@ -18,9 +18,10 @@ public class movingdoor : MonoBehaviour
 
     private void Update()
     {
-       if(isOpen == true)
-       {
+        if (isOpen == true)
+        {
             door.position = Vector3.MoveTowards(door.position, EndPoint.position, Time.deltaTime);
-       }
-    }   
+        }
+    }
+
 }
