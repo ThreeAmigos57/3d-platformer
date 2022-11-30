@@ -11,6 +11,8 @@ public class movingdoor : MonoBehaviour
     public Transform startingpoint;
     public Transform EndPoint;
 
+    public bool doorisOpen;
+
     private void Start()
     {
         door.position = startingpoint.position;
@@ -21,7 +23,13 @@ public class movingdoor : MonoBehaviour
         if (isOpen == true)
         {
             door.position = Vector3.MoveTowards(door.position, EndPoint.position, Time.deltaTime);
+            doorisOpen = true;
         }
+
+        // if(doorisOpen == true)
+        // {
+        //     door.position = Vector3.MoveTowards(door.position, startingpoint.position, Time.deltaTime);
+        // }
     }
 
 }

@@ -539,8 +539,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1217935, y: 1.8312732, z: 2.005087}
-  m_Center: {x: 1.3981625, y: -0.012252571, z: 0.0065193176}
+  m_Size: {x: 6.3059163, y: 1.8312732, z: 2.005087}
+  m_Center: {x: 2.9902244, y: -0.012252561, z: 0.0065193265}
 --- !u!1 &1824108209
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +682,7 @@ MonoBehaviour:
   door: {fileID: 8845982588316278308}
   startingpoint: {fileID: 16063031}
   EndPoint: {fileID: 288274084}
+  doorisOpen: 0
 --- !u!4 &1877432881
 Transform:
   m_ObjectHideFlags: 0
@@ -65371,7 +65372,7 @@ GameObject:
   - component: {fileID: 5066670769213397632}
   m_Layer: 0
   m_Name: Breathing Idle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

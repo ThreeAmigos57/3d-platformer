@@ -5,14 +5,14 @@ using UnityEngine;
 public class Doorsensor : MonoBehaviour
 {
    public movingdoor myDoor;
-	public bool is_range = false;
+   public bool is_range = false;
 
    private void OnTriggerEnter(Collider other)
    {
-		  if(other.tag == "Player")
-		  {
+		if(other.tag == "Player")
+		{
 			is_range = true;
-		  }
+		}
    }
 
 	private void OnTriggerExit(Collider other)
@@ -25,9 +25,17 @@ public class Doorsensor : MonoBehaviour
 
     private void Update()
     {
+
+
         if (is_range == true && Input.GetKeyDown(KeyCode.E))
         {
 			myDoor.isOpen = true;
         }
+		// if (myDoor.doorisOpen == true && Input.GetKeyDown(KeyCode.E))
+        // {
+		// 	myDoor.isOpen = false;
+		// 	myDoor.doorisOpen = false;
+        // }
+
     }
 }
