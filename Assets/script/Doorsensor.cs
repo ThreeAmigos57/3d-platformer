@@ -30,12 +30,17 @@ public class Doorsensor : MonoBehaviour
         if (is_range == true && Input.GetKeyDown(KeyCode.E))
         {
 			myDoor.isOpen = true;
+            //StartCoroutine(Opener());
         }
-		// if (myDoor.doorisOpen == true && Input.GetKeyDown(KeyCode.E))
-        // {
-		// 	myDoor.isOpen = false;
-		// 	myDoor.doorisOpen = false;
-        // }
+
 
     }
+    //IEnumerator Opener()
+    //{
+    //    if (myDoor.doorisOpen == true && Input.GetKeyDown(KeyCode.E))
+    //    {
+    //        myDoor.isOpen = false;
+    //        myDoor.doorisOpen = false;
+    //    }
+    //}
 }
