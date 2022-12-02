@@ -292,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 1018842218}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &52742916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -761,6 +762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 1099527085}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &183923075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1409,6 +1411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 1056653074}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &402940086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1498,6 +1501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 1738326250}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &519479394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1575,6 +1579,7 @@ MonoBehaviour:
   startingpoint: {fileID: 1813130262}
   EndPoint: {fileID: 179116364}
   doorisOpen: 0
+  Door: {fileID: 1823726113}
 --- !u!4 &687280925
 Transform:
   m_ObjectHideFlags: 0
@@ -1919,6 +1924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 1916748473}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &729126955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2071,6 +2077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 1652328697}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &776897572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2118,6 +2125,7 @@ MonoBehaviour:
   startingpoint: {fileID: 1133222271}
   EndPoint: {fileID: 98547581}
   doorisOpen: 0
+  Door: {fileID: 1350745628}
 --- !u!4 &806089030
 Transform:
   m_ObjectHideFlags: 0
@@ -2524,6 +2532,7 @@ MonoBehaviour:
   startingpoint: {fileID: 2004941103}
   EndPoint: {fileID: 136160849}
   doorisOpen: 0
+  Door: {fileID: 1692212731}
 --- !u!4 &938659686
 Transform:
   m_ObjectHideFlags: 0
@@ -2689,6 +2698,7 @@ MonoBehaviour:
   startingpoint: {fileID: 1972687401}
   EndPoint: {fileID: 229014536}
   doorisOpen: 0
+  Door: {fileID: 52742915}
 --- !u!4 &1018842219
 Transform:
   m_ObjectHideFlags: 0
@@ -2829,7 +2839,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.8396226, g: 0.68048954, b: 0.20392157, a: 1}
   m_Intensity: 0.98
-  m_Range: 3.63
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2926,6 +2936,7 @@ MonoBehaviour:
   startingpoint: {fileID: 484319446}
   EndPoint: {fileID: 828301923}
   doorisOpen: 0
+  Door: {fileID: 402940085}
 --- !u!4 &1056653075
 Transform:
   m_ObjectHideFlags: 0
@@ -2977,6 +2988,7 @@ MonoBehaviour:
   startingpoint: {fileID: 1532505976}
   EndPoint: {fileID: 395968281}
   doorisOpen: 0
+  Door: {fileID: 183923074}
 --- !u!4 &1099527086
 Transform:
   m_ObjectHideFlags: 0
@@ -3100,6 +3112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 1877432880}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &1209524130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3282,6 +3295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 806089029}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &1350745629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3742,6 +3756,7 @@ MonoBehaviour:
   startingpoint: {fileID: 1302046868}
   EndPoint: {fileID: 997121758}
   doorisOpen: 0
+  Door: {fileID: 776897571}
 --- !u!4 &1652328698
 Transform:
   m_ObjectHideFlags: 0
@@ -3898,6 +3913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 938659685}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &1692212732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3911,6 +3927,99 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.3059173, y: 1.8312732, z: 2.6466405}
   m_Center: {x: 2.9902246, y: -0.012252561, z: 0.32729658}
+--- !u!1 &1717413061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717413062}
+  - component: {fileID: 1717413063}
+  m_Layer: 0
+  m_Name: Point Light (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1717413062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717413061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.49, y: -23.888, z: -2.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1884210855}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &1717413063
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717413061}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.8396226, g: 0.68048954, b: 0.20392157, a: 1}
+  m_Intensity: 0.98
+  m_Range: 20
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1738326249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,6 +4054,7 @@ MonoBehaviour:
   startingpoint: {fileID: 96355962}
   EndPoint: {fileID: 1992320193}
   doorisOpen: 0
+  Door: {fileID: 519479393}
 --- !u!4 &1738326251
 Transform:
   m_ObjectHideFlags: 0
@@ -4008,6 +4118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 2140027195}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &1809000777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4097,6 +4208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDoor: {fileID: 687280924}
   is_range: 0
+  closingdoor: 0
 --- !u!65 &1823726114
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4253,6 +4365,7 @@ MonoBehaviour:
   startingpoint: {fileID: 16063031}
   EndPoint: {fileID: 288274084}
   doorisOpen: 0
+  Door: {fileID: 1209524129}
 --- !u!4 &1877432881
 Transform:
   m_ObjectHideFlags: 0
@@ -4376,6 +4489,7 @@ Transform:
   - {fileID: 1610473082}
   - {fileID: 1244062336}
   - {fileID: 2018586308}
+  - {fileID: 1717413062}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -4413,6 +4527,7 @@ MonoBehaviour:
   startingpoint: {fileID: 287522104}
   EndPoint: {fileID: 639355481}
   doorisOpen: 0
+  Door: {fileID: 729126954}
 --- !u!4 &1916748474
 Transform:
   m_ObjectHideFlags: 0
@@ -4914,6 +5029,7 @@ MonoBehaviour:
   startingpoint: {fileID: 1406639325}
   EndPoint: {fileID: 937693953}
   doorisOpen: 0
+  Door: {fileID: 1809000776}
 --- !u!4 &2140027196
 Transform:
   m_ObjectHideFlags: 0
@@ -9776,8 +9892,8 @@ GameObject:
   - component: {fileID: 6645254580121794176}
   - component: {fileID: 2942588464756302079}
   - component: {fileID: 4801247264733007092}
-  - component: {fileID: 541577835469655794}
   - component: {fileID: 541577835469655795}
+  - component: {fileID: 541577835469655794}
   m_Layer: 0
   m_Name: pCube845
   m_TagString: Untagged
@@ -9785,19 +9901,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &541577835469655794
-MonoBehaviour:
+--- !u!65 &541577835469655794
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541577835469655793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee76a738939681c45a788fa3adaf5de5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  has_script: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.10796387, y: 0.22074646, z: 3.5690117}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &541577835469655795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9810,7 +9926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76a738939681c45a788fa3adaf5de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  has_script: {fileID: 0}
+  has_script: {fileID: 1440281483}
 --- !u!33 &542184326888636093
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -55994,7 +56110,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &5066670769213397631
 CapsuleCollider:
@@ -57319,7 +57435,6 @@ GameObject:
   - component: {fileID: 844491251222124283}
   - component: {fileID: 4290874733818498753}
   - component: {fileID: 5174941139406197787}
-  - component: {fileID: 5174941139406197788}
   - component: {fileID: 5174941139406197789}
   m_Layer: 0
   m_Name: pasted__Scroll
@@ -57336,24 +57451,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5174941139406197786}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.22950129, y: 0.32828557, z: 0.07398202}
   m_Center: {x: -0.000000014901163, y: -0.000000014901165, z: 0.000000059604645}
---- !u!114 &5174941139406197788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174941139406197786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee76a738939681c45a788fa3adaf5de5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  has_script: {fileID: 0}
 --- !u!114 &5174941139406197789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57366,7 +57468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee76a738939681c45a788fa3adaf5de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  has_script: {fileID: 0}
+  has_script: {fileID: 1440281483}
 --- !u!1 &5177371781174230051
 GameObject:
   m_ObjectHideFlags: 0

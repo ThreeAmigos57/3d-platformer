@@ -6,6 +6,7 @@ public class Doorsensor : MonoBehaviour
 {
    public movingdoor myDoor;
    public bool is_range = false;
+    public bool closingdoor = false;
 
    private void OnTriggerEnter(Collider other)
    {
@@ -20,6 +21,8 @@ public class Doorsensor : MonoBehaviour
 		if (other.tag == "Player")
 		{
 			is_range = false;
+            Debug.Log("Left Range");
+
 		}
 	}
 
@@ -31,6 +34,10 @@ public class Doorsensor : MonoBehaviour
         {
 			myDoor.isOpen = true;
             //StartCoroutine(Opener());
+        }
+        else if (is_range == false && myDoor.isOpen == true)
+        {
+            closingdoor = true;
         }
 
 

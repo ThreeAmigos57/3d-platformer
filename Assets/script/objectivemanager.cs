@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class objectivemanager : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class objectivemanager : MonoBehaviour
     void Update()
     {
         
+        if (object_count == 2)
+        {
+            SceneManager.LoadScene(2);
+        }
+
     }
 
     public void ObjectiveCompleted()
