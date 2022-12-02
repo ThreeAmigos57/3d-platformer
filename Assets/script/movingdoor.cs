@@ -11,12 +11,11 @@ public class movingdoor : MonoBehaviour
     public Transform startingpoint;
     public Transform EndPoint;
 
-    public bool doorisOpen;
     public Doorsensor Door;
 
     private void Start()
     {
-        door.position = startingpoint.position;
+        startingpoint.position = door.position;
     }
 
     private void Update()
@@ -24,12 +23,12 @@ public class movingdoor : MonoBehaviour
         if (isOpen == true)
         {
             door.position = Vector3.MoveTowards(door.position, EndPoint.position, Time.deltaTime);
-            doorisOpen = true;
+
         }
-        else if(Door.closingdoor == true)
+        if(Door.closingdoor == true)
         {
-            door.position = Vector3.MoveTowards(EndPoint.position, startingpoint.position, Time.deltaTime);
-            Door.closingdoor = false;
+            isOpen = false;
+            door.position = Vector3.MoveTowards(door.position, startingpoint.position, Time.deltaTime);
             Debug.Log("Closing Door");
         }
 

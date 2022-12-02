@@ -6,7 +6,7 @@ public class Doorsensor : MonoBehaviour
 {
    public movingdoor myDoor;
    public bool is_range = false;
-    public bool closingdoor = false;
+   public bool closingdoor = false;
 
    private void OnTriggerEnter(Collider other)
    {
@@ -33,9 +33,10 @@ public class Doorsensor : MonoBehaviour
         if (is_range == true && Input.GetKeyDown(KeyCode.E))
         {
 			myDoor.isOpen = true;
+            closingdoor = false;
             //StartCoroutine(Opener());
         }
-        else if (is_range == false && myDoor.isOpen == true)
+        if (is_range == false && myDoor.isOpen == true)
         {
             closingdoor = true;
         }
