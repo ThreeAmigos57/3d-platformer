@@ -21,6 +21,7 @@ public class objectivemanager : MonoBehaviour
         if (object_count == 2)
         {
             SceneManager.LoadScene(2);
+            Cursor.lockState = CursorLockMode.None;
         }
 
     }
